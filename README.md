@@ -1,2 +1,4 @@
-# bpgi
-bpgi is a bash script that appends a list of files and directories used by a chosen service that we do not want to be tracked by version control to a .gitignore file
+# `bpgi` Adds Boilerplate `.gitignore` Templates to Your Directory's `.gitignore` File
+`bpgi` is a `bash` script that appends boilerplate `.gitignore` templates to the current directory's `.gitignore` file. It is designed to quickly add files and/or directories you do not want to perform version control on to a `.gitignore` file, especially when new services or technologies are added to your stack.
+
+`bpgi` uses GitHub's collection of [gitignore](https://github.com/github/gitignore) templates as a starting point for the templates one can append to their current directory's `.gitignore`. Each `.gitignore` template's file takes the name `<ServiceName>.gitignore`. All `.gitignore` templates used by `bpgi` are stored in `.local/share/bpgi/gitignore`. Users may add additional `.gitignore` templates for services not included to this directory or editing existing `.gitignore` templates to better suite ones' needs.
