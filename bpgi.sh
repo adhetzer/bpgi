@@ -1,4 +1,3 @@
-# Hi Son
 #!/bin/bash
 
 # Append boilerplate .gitignore(s) to the .gitignore in target directory.
