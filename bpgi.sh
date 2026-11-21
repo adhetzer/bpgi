@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Append boilerplate .gitignore(s) to the .gitignore in target directory.
 # Written with the help of ChatGPT
