@@ -3,8 +3,7 @@
 # Append boilerplate .gitignore(s) to the .gitignore in target directory.
 # Written with the help of ChatGPT
 
-GITIGNORE_DIR="$HOME/GIT_GIT_GIT"
-#"$HOME/.local/share/bpgi/gitignore"
+GITIGNORE_DIR="$HOME/.local/share/bpgi/gitignore"
 
 build_header() {
 	local file="$1"
