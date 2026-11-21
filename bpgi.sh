@@ -3,7 +3,8 @@
 # Append boilerplate .gitignore(s) to the .gitignore in target directory.
 # Written with the help of ChatGPT
 
-GITIGNORE_DIR="$HOME/.local/share/bpgi/gitignore"
+GITIGNORE_DIR="$HOME/GIT_GIT_GIT"
+#"$HOME/.local/share/bpgi/gitignore"
 
 build_header() {
 	local file="$1"
@@ -16,6 +17,15 @@ build_header() {
 	printf `%s\n%s\n%s\n\n` "$bar" "$text" "$bar"
 
 }
+
+# Ensure GITIGNORE_DIR exists
+if [[ ! -d $GITIGNORE_DIR ]]; then
+	echo "ERROR: GITIGNORE_DIR does not exist"
+	echo "       Update GITIGNORE_DIR in bpgi.sh, OR consider cloning" 
+	echo "       .gitignore templates into existing GITIGNORE_DIR from:"
+	echo "              https://github.com/github/gitignore"
+	exit 1
+fi
 
 # Ensure one or more arguement was passed
 if [[ $# -eq 0 ]]; then
@@ -79,5 +89,6 @@ for file in "$@"; do
 		fi
 	else
 		echo "Error: '$file'.gitignore does not exist."
+		exit 1
 	fi
 done
