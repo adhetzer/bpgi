@@ -4,11 +4,15 @@
 
 All `.gitignore` templates used by `bpgi` are expected to be stored in `$HOME/.local/share/bpgi/gitignore`. `bpgi` expects a gitignore template's file name to take the following form: `<ServiceName>.gitignore`.
 
-Users may create additional `.gitignore` templates for services not included to this directory or edit existing `.gitignore` templates to better suit one's needs. My personal implementation of `bpgi` uses GitHub's [collection of gitignore templates](https://github.com/github/gitignore) as the starting point for my `$HOME/.local/share/bpgi/gitignore` directory. Additional `.gitignore` templates may be generated at Toptal's [gitignore.io](https://www.toptal.com/developers/gitignore/).
+## Adding New `.gitignore` Templates
 
-## Writing Your Own `.gitignore` Templates
+Users may create additional `.gitignore` templates for services not included to this directory or edit existing `.gitignore` templates to better suit one's needs.
+
+The creator's personal implementation of `bpgi` uses GitHub's [collection of gitignore templates](https://github.com/github/gitignore) as the starting point for their `$HOME/.local/share/bpgi/gitignore` directory. Additional `.gitignore` templates may be generated at Toptal's [gitignore.io](https://www.toptal.com/developers/gitignore/).
 
 Please see the [gitignore](https://git-scm.com/docs/gitignore#_pattern_format) documentation for more information on how patterns in `gitignore` files specify "intentionally untracked files that Git should ignore."
+
+> **Note:** A boilerplate `.gitignore` template is _just a start_ to your project's needs. Change these templates and/or the `.gitignore` file they are copied to to fit your project(s)'s needs.
 
 ## Security Disclaimer
 
