@@ -1,4 +1,4 @@
-# `bpgi` - Quickly add boilerplate gitgnore templates to your project
+# `bpgi` - Quickly add boilerplate `.gitgnore` templates to your project
 
 `bpgi` is a `bash` script that appends boilerplate `.gitignore` templates to the current directory's `.gitignore` file. `bpgi` is especially useful when we add a new service or technology to an existing project's stack that has it's own unique set of files and/or directories that we do not want to track.
 
